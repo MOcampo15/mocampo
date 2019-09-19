@@ -14,7 +14,7 @@
              function checkGuess() {
                  var userGuess = Number(guessField.value);
                  if (guessCount === 1) {
-                     guesses.innerHTML = 'Previous guesses: ';
+                     guesses.innerHTML = 'Previous guesses ';
                  }
                  guesses.innerHTML += userGuess + ' ';
                  
@@ -23,6 +23,11 @@
                         lastResult.style.backgroundColor = 'green';
                         lowOrHi.innerHTML = ' ';
                         setGameOver();
+                    }
+                    if (userGuess > 99) {
+                        lastResult.innerHTML = 'Please choose a number smaller than 99! ';
+                        lastResult.style.backgroundColor = 'blue';
+                        lowOrHi.innerHTML = ' ';
                     }
                      else if (guessCount === 7) {
                         lastResult.innerHTML = 'Sorry, you lost!';
@@ -71,7 +76,6 @@
                 lastResult.style.backgroundColor = 'white';
                 
                 randomNumber = Math.floor(Math.random() * 99) + 1;
-                
                 
             }
             
