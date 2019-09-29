@@ -137,11 +137,19 @@ $(document).ready(function() {
                     wrongAnswer(8);
                 }
                 
+                // TOTAL SCORE 
+                if (score >= 80) {
+                 $("#totalScore").html(`Total Score: ${score}`).css("color", "green");
+                 if (score === 137.5) {
+                $("#winner").html("Congratulations on a perfect score!").css("color", "green").css("border", "2px solid black"); 
+                   }
+                     }
+                else {
+                 $("#totalScore").html(`Total Score: ${score}`).css("color", "red");
+                     }
+                     }   
+                
         
-                    $("#totalScore").html(`Total Score: ${score}`);
-            }
-            
-           
-            });
+ }); //ready
             
             
