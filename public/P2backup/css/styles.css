@@ -1,0 +1,26 @@
+.checkboxes {
+  margin: 0 5px 0 20px;
+}
+h1 {
+    text-align: center;
+}
+
+head.title {
+    
+}
+body {
+    background-color:black;
+    color:orange;
+    font-family: 'Mansalva', cursive;
+}
+
+h3 {
+    letter-spacing: 2px;
+    color: #ff9933;
+    font-size: 2em;
+    margin-bottom: 0px; 
+}
+
+label {
+    color: white;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Halloween Quiz</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Mansalva&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <body class="text-center">
+        <div class="header">
+        <h1 class="jumbotron">How Well Do You Know Halloween?</h1>
+        
+        <!---Question 1--->
+        <h3>Where does Halloween originate from? </h3>
+        <input type="checkbox" id="Mexico"> <label for"Mexico"> Mexico </label>
+        <input type="checkbox" id="Ireland"> <label for"Ireland"> Ireland </label>
+        <input type="checkbox" id="France"> <label for"France"> France</label>
+        <br><br>
+        <div id = "q1Feedback"></div>
+        
+        <!---Question 2 --->
+        <h3> Before pumpkins were used, what were Jack O'Lanterns made of?</h3>
+        <input type="checkbox" id="Potatoes"> <label for"Potatoes"> Potatoes </label>
+        <input type="checkbox" id="Zucchinis"> <label for"Zucchini"> Zucchini </label>
+        <input type="checkbox" id="Turnips"> <label for"Turnips"> Turnips</label>
+        <br><br>
+        <div id="q2Feedback"></div>
+        
+        <!---Question 3 --->
+        <h3> When is Halloween celebrated? </h3>
+        <input type="checkbox" id="October 31"> <label for"October 31"> October 31 </label>
+        <input type="checkbox" id="November 2"> <label for"November 2"> November 2 </label>
+        <input type="checkbox" id="October 30"> <label for"October 30"> October 30 </label>
+        <br><br>
+        <div id="q3Feedback"></div>
+        
+        <!---Question 4 --->
+        <h3> What Do You Call the Fear of Halloween? </h3>
+        <input type="checkbox" id="Trypophobia"> <label for"Trypophobia"> Trypophobia </label>
+        <input type="checkbox" id="Arachnophobia"> <label for"Arachnophobia"> Arachnophobia </label>
+        <input type="checkbox" id="Samhainophobia"> <label for"Samhainophobia"> Samhainophobia </label>
+        <br><br>
+        <div id="q4Feedback"></div>
+        
+        <!---Question 5 --->
+        <h3> What is the other name for Halloween? </h3>
+        <input type="checkbox" id="Spook Fest"> <label for"Spook Fest"> Spook Fest </label>
+        <input type="checkbox" id="All Hallow's Eve"> <label for"All Hallow's Eve"> All Hallow's Eve </label>
+        <input type="checkbox" id="Fright Night"> <label for"Fright Night"> Fright Night </label>
+        <br><br>
+        <div id="q5Feedback"></div>
+        
+         <!---Submit Button--->  
+        <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+        <button type="button" class="btn btn-info">Submit Quiz</button>
+        <br>
+        <h2 id="totalScore" class="text-info"></h2>
+        
+        <footer>
+            <hr>
+            CST 336 Internet Programming. 2019&copy; Ocampo <br />
+            <strong> Disclaimer:</strong> The information in this webpage is fictitious.It is used for academic purposes only. <br />
+            
+        </footer>
+    </body>
+</html>
